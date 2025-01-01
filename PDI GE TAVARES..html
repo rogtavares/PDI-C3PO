@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"PDI - Desenvolvedor Pleno de Rogerio Tavares","children":[{"content":"1. <strong>Salesforce (Gestão de Clientes e APEX) - <img src=\"https://placehold.co/15x15/00FF00/00FF00.png\" alt=\"#00FF00\"> Verde</strong>","children":[{"content":"<strong>Objetivo</strong>: Tornar-se ADM e especialista em Salesforce, incluindo APEX e automação.","children":[{"content":"<strong>Certificação</strong>: Salesforce Certified Administrador Platform Developer I. ( julho 2025)","children":[],"payload":{"lines":"14,15"}},{"content":"<strong>Ações</strong>:","children":[{"content":"Cursos: \"Salesforce Development for Beginners\" Superbadges | Salesforce Trailhead e (Udemy).","children":[],"payload":{"lines":"16,17"}},{"content":"Trailhead: Trilha \"Developing with Apex and Visualforce\".","children":[],"payload":{"lines":"17,18"}},{"content":"Projetos práticos: Criar ORG para colocar mao na massa  , do CRM personalizado e fluxos automatizados.","children":[],"payload":{"lines":"18,19"}},{"content":"Itau15-DEV| Salesforce","children":[],"payload":{"lines":"19,21"}}],"payload":{"lines":"15,21"}}],"payload":{"lines":"13,21"}}],"payload":{"lines":"12,13"}},{"content":"2. <strong>Datadog (Monitoramento de Sistemas) - <img src=\"https://placehold.co/15x15/0000FF/0000FF.png\" alt=\"#0000FF\"> Azul</strong>","children":[{"content":"<strong>Objetivo</strong>: Garantir monitoramento eficiente e otimização de sistemas. do TRATAR","children":[{"content":"<strong>Estudo</strong>: Documentação e webinars sobre Datadog.","children":[],"payload":{"lines":"23,24"}},{"content":"<strong>Ações</strong>:","children":[{"content":"Implementar monitoramento de logs e métricas.","children":[],"payload":{"lines":"25,26"}},{"content":"Criar alertas para integrações AWS JI5 e Salesforce JI5.","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"24,28"}}],"payload":{"lines":"22,28"}}],"payload":{"lines":"21,22"}},{"content":"3. <strong>AWS (IA, Automação e Infraestrutura) - <img src=\"https://placehold.co/15x15/FFA500/FFA500.png\" alt=\"#FFA500\"> Laranja</strong>","children":[{"content":"<strong>Objetivo</strong>: Aplicar IA e automação utilizando AWS.","children":[{"content":"<strong>Certificação</strong>: AWS ( AIF-C01) E AWS2 (SAA-C03)Solutions Architect Associate.","children":[],"payload":{"lines":"30,31"}},{"content":"<strong>Ações</strong>:","children":[{"content":"Implementar modelos de IA no SageMaker.","children":[],"payload":{"lines":"32,33"}},{"content":"Desenvolver APIs utilizando Lambda e API Gateway.","children":[],"payload":{"lines":"33,34"}},{"content":"Estudo de recursos como Lambda e API Gateway.","children":[],"payload":{"lines":"34,36"}}],"payload":{"lines":"31,36"}}],"payload":{"lines":"29,36"}}],"payload":{"lines":"28,29"}},{"content":"4. <strong>Java Backend (Desenvolvimento de Microsserviços) - <img src=\"https://placehold.co/15x15/FF0000/FF0000.png\" alt=\"#FF0000\"> Vermelho</strong>","children":[{"content":"<strong>Objetivo</strong>: Criar soluções robustas e escaláveis.","children":[{"content":"<strong>Estudo</strong>: Spring Boot, RESTful APIs e Apache Kafka e do Kafka Connect e RabbitMQ.","children":[],"payload":{"lines":"38,39"}},{"content":"<strong>Ações</strong>:","children":[{"content":"Desenvolver microsserviços com autenticação (OAuth 2.0).","children":[],"payload":{"lines":"40,41"}},{"content":"Implementar integração com RabbitMQ e filas de mensagens.","children":[],"payload":{"lines":"41,43"}}],"payload":{"lines":"39,43"}}],"payload":{"lines":"37,43"}}],"payload":{"lines":"36,37"}},{"content":"5. <strong>RabbitMQ (Mensageria e Filas) - <img src=\"https://placehold.co/15x15/800080/800080.png\" alt=\"#800080\"> Roxo</strong>","children":[{"content":"<strong>Objetivo</strong>: Dominar mensageria e comunicação entre microsserviços.","children":[{"content":"<strong>Estudo</strong>: Documentação e padrões de design em mensageria.","children":[],"payload":{"lines":"45,46"}},{"content":"<strong>Ações</strong>:","children":[{"content":"Configurar e testar filas de mensagens entre sistemas Java e Salesforce.","children":[],"payload":{"lines":"47,49"}}],"payload":{"lines":"46,49"}}],"payload":{"lines":"44,49"}}],"payload":{"lines":"43,44"}},{"content":"6. <strong>Integração e IA - <img src=\"https://placehold.co/15x15/FFFF00/FFFF00.png\" alt=\"#FFFF00\"> Amarelo</strong>","children":[{"content":"<strong>Objetivo</strong>: Unir as tecnologias aprendidas, utilizando IA para automação.","children":[{"content":"<strong>Ações</strong>:","children":[{"content":"Criar um sistema integrado utilizando todas as tecnologias (Datadog, RabbitMQ, AWS, Salesforce).","children":[],"payload":{"lines":"52,53"}},{"content":"Aplicar modelos de IA para análise preditiva e automação de processos.","children":[],"payload":{"lines":"53,54"}}],"payload":{"lines":"51,54"}}],"payload":{"lines":"50,54"}}],"payload":{"lines":"49,50"}}],"payload":{"lines":"10,11"}},{})</script>
+</body>
+</html>
